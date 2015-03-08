@@ -2,7 +2,7 @@
   "name": "vulcan",
   "version": "0.0.1",
   "description": "Tool box for node projects.",
-  "main": "index.js",
+  "main": "vulcan.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
