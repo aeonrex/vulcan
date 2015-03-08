@@ -1,0 +1,24 @@
+{
+  "name": "vulcan",
+  "version": "0.0.1",
+  "description": "Tool box for node projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t4ks/vulcan.git"
+  },
+  "author": "taylorks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t4ks/vulcan/issues"
+  },
+  "homepage": "https://github.com/t4ks/vulcan",
+  "dependencies": {
+    "lodash": "^3.4.0",
+    "nconf": "^0.7.1",
+    "url": "^0.10.3"
+  }
+}
