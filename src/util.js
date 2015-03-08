@@ -13,6 +13,15 @@ var util = require('util'),
 util._ = _;
 util.url = url;
 
+
+util.copy = function (simpleObj) {
+
+    if (_.isPlainObject(simpleObj)) {
+        // why? because FUCK YOU! that's why!
+        return JSON.parse(JSON.stringify(simpleObj));
+    }
+};
+
 util.listFiles = function (dir) {
 
     var results = [];
