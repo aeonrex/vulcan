@@ -41,7 +41,16 @@ util.listFiles = function (dir) {
     });
 
     return results;
-
 };
+
+util.arrayMatch = function (array, string) {
+    var i = 0;
+    for (i; i < array.length; i++) {
+        if (string.match(new RegExp(array[i]))) {
+            return array[i];
+        }
+    }
+};
+
 
 module.exports = util;
