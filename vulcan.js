@@ -12,6 +12,9 @@ module.exports.util = util;
 module.exports.config = config;
 
 
-module.exports.setup = function () {
-    require('./src/vulcan');
+module.exports.setup = function (callback) {
+    callback = callback || function () {
+    };
+    require('./src/vulcan')();
+    callback();
 };

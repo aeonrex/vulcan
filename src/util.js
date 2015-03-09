@@ -9,10 +9,8 @@ var util = require('util'),
     url = require('url'),
     fs = require('fs');
 
-
 util._ = _;
 util.url = url;
-
 
 util.copy = function (simpleObj) {
 
