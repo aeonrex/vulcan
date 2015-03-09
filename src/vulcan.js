@@ -5,7 +5,7 @@
 
 var nconf = require('nconf'),
     util = require('./util'),
-    appConfigPath = util.url.resolve(process.cwd(), '/config');
+    appConfigPath = util.url.resolve(process.cwd()+'/', 'config');
 
 module.exports = function () {
     nconf

@@ -15,6 +15,6 @@ module.exports.config = config;
 module.exports.hammer = function (callback) {
     callback = callback || function () {
     };
-    require('./src/vulcan')();
+    require('./src/vulcan');
     callback();
 };
