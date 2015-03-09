@@ -11,8 +11,8 @@ var util = require('./src/util'),
 module.exports.util = util;
 module.exports.config = config;
 
-
-module.exports.setup = function (callback) {
+// Vulcan hammers, not 'sets up'
+module.exports.hammer = function (callback) {
     callback = callback || function () {
     };
     require('./src/vulcan')();
