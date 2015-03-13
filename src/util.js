@@ -20,12 +20,15 @@ util.copy = function (simpleObj) {
     }
 };
 
-util.listFiles = function (dir) {
+util.listFiles = function (dir, options) {
 
     var results = [];
-
+    options = options || {};
     _.forEach(fs.readdirSync(dir), function (file) {
 
+        if (options.extension && !file.match(new RegExp(options.extension))) {
+            return;
+        }
         file = url.resolve(dir + '/', file);
 
         var stat = fs.statSync(file);
