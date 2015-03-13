@@ -11,7 +11,8 @@ module.exports = function () {
     nconf
         .env()
         .argv();
-    util._.forEach(util.listFiles(appConfigPath), function (uri) {
+
+    util._.forEach(util.listFiles(appConfigPath, {extension: '.json'}), function (uri) {
         nconf.file(uri, uri);
     });
 }();
