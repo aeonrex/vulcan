@@ -26,15 +26,14 @@ util.listFiles = function (dir, options) {
     options = options || {};
     _.forEach(fs.readdirSync(dir), function (file) {
 
-        if (options.extension && !file.match(new RegExp(options.extension))) {
-            return;
-        }
         file = url.resolve(dir + '/', file);
 
         var stat = fs.statSync(file);
 
         if (stat && stat.isDirectory()) {
             results = results.concat(util.listFiles(file))
+        } else if (options.extension && !file.match(new RegExp(options.extension))) {
+            return;
         } else {
             results.push(file);
         }
