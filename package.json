@@ -1,6 +1,6 @@
 {
   "name": "vulcan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tool box for node projects.",
   "main": "vulcan.js",
   "scripts": {
